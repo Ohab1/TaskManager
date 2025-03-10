@@ -71,7 +71,7 @@ const TaskList = ({ navigation }) => {
         style: "destructive",
         onPress: async () => {
           try {
-            const response = await fetch(`http://192.168.70.94:2000/tasks/deleteTask/${taskId}`, {
+            const response = await fetch(`${url}/tasks/deleteTask/${taskId}`, {
               method: "DELETE",
               headers: {
                 Authorization: `Bearer ${jwtToken}`,
